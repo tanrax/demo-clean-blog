@@ -1,0 +1,92 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --gap-xxl: 4rem;
+    --gap-xl: 2rem;
+    --gap-l: 1.5rem;
+    --gap-m: 1rem;
+    --gap-s: .9rem;
+}
+
+body {
+    font-family: arial;
+}
+
+/* Componentes */
+
+.container {
+    margin-inline: auto;
+    max-width: 1000px;
+    padding-inline: 1rem;
+}
+
+.container--small {
+    max-width: 800px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.ul-reset {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: var(--gap-xl);
+    color: var(--color-white);
+}
+
+.nav__link {
+    display: block;
+    padding: var(--gap-m);
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+/* Pagina home */
+
+.hero {
+    --level-black: .3;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--level-black)), rgba(0, 0, 0, var(--level-black))),  url(../img/hero.avif);
+    background-size: initial, cover;
+    background-position: center;
+    padding-block: 10rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero__title {
+    font-size: var(--gap-xxl);
+    margin-bottom: 0;
+}
+
+.hero__text {
+    font-size: var(--gap-l);
+    margin-top: 0;
+}
+
+.blog {
+    margin-top: var(--gap-xxl);
+}
+
+.post__title {
+    font-size: var(--gap-l);
+}
